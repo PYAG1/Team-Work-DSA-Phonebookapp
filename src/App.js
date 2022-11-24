@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import Main from "./other";
 
@@ -51,6 +52,15 @@ function AddBtn(){
 
 
 
+=======
+
+function App() {
+  return (
+    <div>
+      hello
+    </div>
+  );
+>>>>>>> b857cba1c10c8d60f6aa67e6074d6c0a719d1dbb
 }
 
 
