@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ HEAD
 *html{
   box-sizing: border-box;
 }
@@ -11,11 +11,25 @@ body{
   border:solid 1px black;
   width:100%;
   height:80px;
+  padding:2em;
+
+    display:flex;
+  align-items: center;
+    justify-content: space-between;
+  
 }
-=======
+
+.show button{
+  height:40px;
+  border:none;
+  background: transparent;
+  font-size: 1.3em;
+
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
->>>>>>> b857cba1c10c8d60f6aa67e6074d6c0a719d1dbb
+

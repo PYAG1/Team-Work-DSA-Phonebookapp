@@ -1,13 +1,18 @@
-<<<<<<< HEAD
+
 import React from "react";
 import Main from "./other";
 
 
 export default function App(){
+
+
 const [formse,setforms]= React.useState({
 name:"",
-number:""
+number:"",
+
 });
+
+
 
 
 function changeV(event){
@@ -25,10 +30,8 @@ const [number, setnumber]= React.useState([]);
 console.log(number)
 
 
+
 function AddBtn(){
-
-
-
   const Name=document.getElementById("name");
   Name.value= ''
   setnumber(prev =>{
@@ -38,37 +41,33 @@ function AddBtn(){
     }
     else{
     
-
-
       return [ ...prev , formse]
+    
       
-  
-     
     }
-
+  }) 
   
+   
 
-  })
-
-
-
-=======
-
-function App() {
-  return (
-    <div>
-      hello
-    </div>
-  );
->>>>>>> b857cba1c10c8d60f6aa67e6074d6c0a719d1dbb
 }
+
+
+
+
+
+
 
 
 const value=number.map(function(item){
 return <Main 
-{...item}
+{...item} 
 />
 })
+
+
+function Erase(event){
+    
+}
 
 
 
@@ -95,6 +94,7 @@ return(
 
   </div>
 )
+
 
 
 }
