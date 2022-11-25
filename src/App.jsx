@@ -9,6 +9,7 @@ export default function App() {
   const [contactNumber, setNumber] = useState('')
   const [contactList, setContactList] = useState([]);
 
+  //Base Code
   // function changeV(event) {
   //   setforms((prev) => {
   //     return {
@@ -35,7 +36,7 @@ export default function App() {
   //   });
   // }
 function addContact(){
-  if(contactName && contactNumber){
+  if(contactName && contactNumber.length === 10){
     setContactList(prev => {
       return [...prev, {
         id: Math.floor(Math.random() * 100000),
@@ -48,7 +49,7 @@ function addContact(){
     setNumber('')
   }
 }
-
+//base code
   // const value = contactList.map(function (item) {
   //   return <Main {...item} />;
   // });
