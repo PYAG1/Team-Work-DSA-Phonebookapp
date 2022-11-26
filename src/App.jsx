@@ -54,13 +54,16 @@ function addContact(){
   //   return <Main {...item} />;
   // });
 
-  /*function Erase(id) {
+  function Erase(id) {
+  
     setContactList(prev => {
       return contactList.filter(itm => {
         return itm.id !== id
       })
     })
-  }*/
+  }
+
+
 
   return (
     <div className="p-8" >
@@ -99,7 +102,18 @@ function addContact(){
         <br></br>
         <input type="submit" value="Add" />
       </form>
-      <div className=" pt-10">
+
+
+      <div className=" search pt-10">
+        <div className=" py-4">
+          <input type="text"
+          name="search"
+          id="search"
+          placeholder='search'
+          className=" h-10"
+         
+          />
+        </div>
       {
         contactList.length !== 0 && contactList.map((itm, inx) => {
           return(

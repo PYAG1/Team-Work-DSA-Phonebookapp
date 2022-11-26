@@ -43,6 +43,11 @@ body{
   box-sizing: border-box;
 
 }
+.search input{
+  padding: 12px 20px;
+  border:solid 1.3px goldenrod;
+  width:100%;
+}
 
 .show button{
   height:40px;
@@ -50,6 +55,9 @@ body{
   background: transparent;
   font-size: 1.3em;
 }
+
+
+
 
 
 
