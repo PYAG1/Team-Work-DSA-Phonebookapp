@@ -54,21 +54,22 @@ function addContact(){
   //   return <Main {...item} />;
   // });
 
-  function Erase(id) {
+  /*function Erase(id) {
     setContactList(prev => {
       return contactList.filter(itm => {
         return itm.id !== id
       })
     })
-  }
+  }*/
 
   return (
-    <div>
-      <form onSubmit={(e) =>{
+    <div className="p-8" >
+      <form  className="form" onSubmit={(e) =>{
         e.preventDefault()
         addContact()
       }}>
-        <label htmlFor="name">Name</label>
+        <div>
+        <label htmlFor="name"  className=" pb-4 text-xl font-bold ">Name</label>
         <br></br>
         <input
           type="text"
@@ -78,9 +79,13 @@ function addContact(){
           placeholder="Enter your name"
           onChange={(e) => setName(e.currentTarget.value)}
         />
+        </div>
 
         <br></br>
-        <label htmlFor="number">number</label>
+
+        <div>
+
+        <label htmlFor="number" className=" text-xl font-bold ">Number</label>
         <br></br>
         <input
           type="number"
@@ -90,8 +95,11 @@ function addContact(){
           value={contactNumber}
           onChange={(e) => setNumber(e.currentTarget.value)}
         />
+        </div>
+        <br></br>
         <input type="submit" value="Add" />
       </form>
+      <div className=" pt-10">
       {
         contactList.length !== 0 && contactList.map((itm, inx) => {
           return(
@@ -99,6 +107,7 @@ function addContact(){
           )
         })
       }
+      </div>
     </div>
   );
 }
