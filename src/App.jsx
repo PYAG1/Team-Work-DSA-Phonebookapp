@@ -69,7 +69,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className="container">
     <div className=" maxscreen p-12">
       <form
         className="form"
@@ -118,6 +118,11 @@ export default function App() {
           value="Add Contact"
           className="bg-slate-100 py-2 rounded-xl hover:bg-black hover:text-white duration-500"
         />
+        <br></br>
+        
+        <small className=" text-center">
+               <h3>By Papa Yaw and Frimpong</h3>
+            </small>
       </form>
 
       <div className=" search pt-10">
@@ -145,9 +150,8 @@ export default function App() {
             })}
       </div>
     </div>
-    <div>
-
-    </div>
+    
+ 
     </div>
 
   );
