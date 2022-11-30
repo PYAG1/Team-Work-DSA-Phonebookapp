@@ -2,11 +2,6 @@ import React from "react";
 import { FaTrash } from "react-icons/fa";
 import BasicPopover from "./edit";
 
-/*
-  <button onClick={
-        () =>
-        deleteFunction(props.id)
-      }>*/
 
       
 

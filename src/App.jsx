@@ -69,7 +69,8 @@ export default function App() {
   }
 
   return (
-    <div className="p-8">
+    <div>
+    <div className=" maxscreen p-12">
       <form
         className="form"
         onSubmit={(e) => {
@@ -144,5 +145,10 @@ export default function App() {
             })}
       </div>
     </div>
+    <div>
+
+    </div>
+    </div>
+
   );
 }

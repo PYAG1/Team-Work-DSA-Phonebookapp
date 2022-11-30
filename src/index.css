@@ -57,6 +57,36 @@ body{
 
 
 
+@media screen  and (min-width:600px){
+  .maxscreen{
+    padding: 2rem 9rem 2rem 9rem; 
+  }
+  .form{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    border-radius: 12px;
+    height: auto;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    margin:20px auto;
+
+  }
+
+}
+/*
+  .maxscreen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+  
+  .search{
+    border:solid 1px red;
+  }
+}*/
+
+
 
 
 
