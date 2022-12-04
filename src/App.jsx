@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Main from "./other";
+import { Stack,Alert } from "@mui/material";
 
 export default function App() {
   // to keep track of name input
@@ -37,9 +38,13 @@ export default function App() {
   //     }
   //   });
   // }
+
+  const [show,setshow]= React.useState(false)
+  
   function addContact() {
     // && contactNumber.length === 10
     if (contactName && contactNumber.length === 10) {
+      setshow(false)
       setContactList((prev) => {
         return [
           ...prev,
@@ -54,7 +59,16 @@ export default function App() {
       setName("");
       setNumber("");
     }
+    else {
+      setshow(true)
+      setNumber("")
+      
+    }
   }
+
+const dis= show === true ?  "contents"  : "none"
+
+console.log(dis);
   //base code
   // const value = contactList.map(function (item) {
   //   return <Main {...item} />;
@@ -110,7 +124,12 @@ export default function App() {
             value={contactNumber}
             className={"bg-slate-50 rounded outline-none w-full px-2 py-2"}
             onChange={(e) => setNumber(e.currentTarget.value)}
+         
           />
+               <Stack sx={{ width: "100%" }} spacing={2} style={{display:`${dis}`}}>
+            <Alert severity="error">Number must be 10 digits</Alert>
+          </Stack>
+          
         </div>
         <br></br>
         <input
