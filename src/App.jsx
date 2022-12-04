@@ -61,7 +61,7 @@ export default function App() {
     }
     else {
       setshow(true)
-      setNumber("")
+     
       
     }
   }
